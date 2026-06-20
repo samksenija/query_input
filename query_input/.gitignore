@@ -1,0 +1,4 @@
+query_input/__pycache__/
+query_input/settings.py
+input/migrations/
+input/admin.py
