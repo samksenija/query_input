@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block body %}    
+    <div class="push-div-down">
+        <form action="/your-name/" method="post">
+            <div class="form-group">
+                <label for="query">Query</label>
+                <input type="text" class="form-control" id="query" placeholder="Enter your query">
+            </div>
+            <div class="form-group">
+                <label for="layer_tags">Layer Tags</label>
+                <select class="form-control" id="layer_tags">
+                    <option>Original</option>
+                    <option>1st</option>
+                    <option>2nd</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="changes_applied">Changes Applied</label>
+                <select class="form-control" id="changes_applied">
+                    <option></option>
+                    <option>Change of filter column order</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="notes">Notes</label>
+                <select class="form-control" id="notes">
+                    <option></option>
+                    <option>How filter order when no primary key is used affects the execution.</option>
+                    <option>Primary key (O_ORDERKEY) is always index as well, so optimizator 
+                        will use it first when performing optimization, no matter where it's ordered in query.
+                    </option>
+                </select>
+            </div>
+        </form> 
+    </div>
+{% endblock %}
