@@ -1,0 +1,20 @@
+{
+    "2_0": {
+        "query": "select * from customers;",
+        "layer_tags": "Original",
+        "changes_applied": "",
+        "notes": ""
+    },
+    "1_0": {
+        "query": "Select * from orders;",
+        "layer_tags": "Original",
+        "changes_applied": "",
+        "notes": ""
+    },
+    "3_0": {
+        "query": "select * from products;",
+        "layer_tags": "2nd",
+        "changes_applied": "Change of filter column order",
+        "notes": "Primary key (O_ORDERKEY) is always index as well, so optimizator will use it first when performing optimization, no matter where it's ordered in query."
+    }
+}
