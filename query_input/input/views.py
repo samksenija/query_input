@@ -4,8 +4,6 @@ from django.http import HttpResponseRedirect
 from .forms import InputForm
 from .utils import write_queries_to_json_file
 
-
-
 # Create your views here.
 def input(request):
     input_form(request)
